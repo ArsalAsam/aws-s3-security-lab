@@ -58,6 +58,36 @@ Verified that Block All Public Access remained enabled on the S3 bucket after co
 
 ## Security Concepts Demonstrated
 
+
+## Lab Screenshots
+
+### S3 Public Access Configuration
+
+![S3 Block Public Access](screenshots/s3-public-access.png)
+
+### S3 Encryption Configuration
+
+![S3 SSE-S3 Encryption](screenshots/s3-encryption.png)
+
+### Least-Privilege IAM Policy
+
+![IAM Read-Only Policy](screenshots/iam-readonly-policy.png)
+
+### IAM Policy Simulator Results
+
+**GetObject — Allowed**
+
+![GetObject Allowed](screenshots/iam-getobject-allowed.png)
+
+**PutObject — Implicitly Denied**
+
+![PutObject Denied](screenshots/iam-putobject-denied.png)
+
+**DeleteObject — Implicitly Denied**
+
+![DeleteObject Denied](screenshots/iam-deleteobject-denied.png)
+
+
 - **Least privilege:** Restricting permissions to only those necessary for a task
 - **Identity and access management:** Controlling which identities can access AWS resources
 - **Encryption at rest:** Protecting stored data using SSE-S3
