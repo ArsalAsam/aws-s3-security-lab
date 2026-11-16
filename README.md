@@ -58,6 +58,12 @@ Verified that Block All Public Access remained enabled on the S3 bucket after co
 
 ## Security Concepts Demonstrated
 
+- **Least privilege:** Restricting permissions to only those necessary for a task
+- **Identity and access management:** Controlling which identities can access AWS resources
+- **Encryption at rest:** Protecting stored data using SSE-S3
+- **Public access prevention:** Using S3 Block Public Access settings
+- **Policy evaluation:** Testing permitted and denied actions using the IAM Policy Simulator
+- **Resource scoping:** Restricting permissions to specific AWS resources through ARNs
 
 ## Lab Screenshots
 
@@ -86,14 +92,6 @@ Verified that Block All Public Access remained enabled on the S3 bucket after co
 **DeleteObject — Implicitly Denied**
 
 ![DeleteObject Denied](screenshots/iam-deleteobject-denied.png)
-
-
-- **Least privilege:** Restricting permissions to only those necessary for a task
-- **Identity and access management:** Controlling which identities can access AWS resources
-- **Encryption at rest:** Protecting stored data using SSE-S3
-- **Public access prevention:** Using S3 Block Public Access settings
-- **Policy evaluation:** Testing permitted and denied actions using the IAM Policy Simulator
-- **Resource scoping:** Restricting permissions to specific AWS resources through ARNs
 
 ## Key Takeaways
 
